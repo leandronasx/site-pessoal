@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+/* 
+    para fazer uma barra de navegação
+    usa um tamanho para height
+    e vai usar o mesmo tamanho para line-height
+
+    nav{
+        height: 50px;
+        line-height: 50px;
+    }
+*/
+body{
+    background-color: rgb(43, 43, 43);
+    color: #ccc;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+
+.navigation{
+    padding: 25px 0;
+}
+.navigation ul {
+    list-style: none;
+}
+.navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: #ccc;
+    padding: 0 30px;
+    font-weight: 400;
+}
+
+.image-profile{
+    max-width: 350px;
+    max-height: auto;
+    border-radius: 350px;
+    border: none;
+    background-color: #000;
+    object-fit: cover;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.main h1{
+    text-transform:uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 3.8rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.main h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.text-orange{
+    color: #f27609;
+    display: block;
+    animation-name: text-movi;
+    animation-duration: 4s;
+}
+.image{
+    width: 35%;
+    margin-left: 4%;
+    animation-name: imagem-movi;
+    animation-duration: 4s;
+}
+.titulo{
+    width: 70%;
+}
+
+@keyframes imagem-movi{
+    0%{
+        margin-top: -20%;
+    }
+    25%{
+        margin-top: -15%;
+    }
+    50%{
+        margin-top: -10%;
+    }
+    75%{
+        margin-top: -5%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+
+@keyframes text-movi{
+    0%{
+        font-size: 0;
+    }
+    100%{
+    }
+}
