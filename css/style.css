@@ -73,13 +73,14 @@ body{
     color: #f27609;
     display: block;
     animation-name: text-movi;
-    animation-duration: 4s;
+    animation-duration: 2s;
 }
 .image{
     width: 35%;
     margin-left: 4%;
     animation-name: imagem-movi;
-    animation-duration: 4s;
+    animation-duration: 700ms;
+    transition: ease-out;
 }
 .titulo{
     width: 70%;
