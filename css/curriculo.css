@@ -20,6 +20,38 @@ ul{
     margin: 0 auto;
 }
 
+
+.nada{
+    width: 40%;
+    padding: 25px 0;
+    background-color: rgb(43, 43, 43);
+    float: left;
+}
+
+.menu { 
+    padding: 25px 0;
+    background-color: #fbfbfb;
+    width: 60%;
+    float: right;
+}
+.menu ul {
+    list-style: none;
+}
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+    padding: 0 30px;
+    font-weight: 400;
+}
+
+
+
+
 .dados-pessoal{
     width: 40%;
     float: left;
@@ -158,13 +190,14 @@ ul{
     margin-bottom: 5px;
 }
 .col-secao h4{
-    font-weight: 600;
+    font-weight: bold;
     margin-bottom: 10px;
+    color: rgb(73, 73, 73) !important;
 }
 
 .col-secao p{
     margin-bottom: 5px;
-    color: black;
+    color: #919191;
     text-shadow: 0 0 0 #111;
 }
 
@@ -182,6 +215,9 @@ ul{
 
 
 @media (max-width:860px){
+    .nada{
+        display: none;
+    }
     .dados-pessoal{
         width: 100%;
     }
