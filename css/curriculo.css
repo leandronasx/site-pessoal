@@ -218,10 +218,22 @@ ul{
     .nada{
         display: none;
     }
+    .menu{
+        background-color: rgb(43, 43, 43);
+    }
+    .menu nav ul li a{
+        color: #fbfbfb;
+    }
     .dados-pessoal{
         width: 100%;
     }
     .informacoes{
         width: 100%;
+    }
+}
+
+@media (max-width:475px){
+    .menu nav ul li a{
+        padding: 0 25px;
     }
 }
