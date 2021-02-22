@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 html, body{
-    /* background-color: #061c3d; */
     background-color: rgb(43, 43, 43);
 }
 ul{
@@ -28,25 +27,31 @@ ul{
     float: left;
 }
 
+
+
 .menu { 
     padding: 25px 0;
     background-color: #fbfbfb;
     width: 60%;
     float: right;
 }
-.menu ul {
+.navigation ul {
     list-style: none;
 }
-.menu ul{
+.navigation ul{
     display: flex;
     justify-content: flex-end;
     align-items:center;
 }
-.menu ul li a{
+.navigation ul li a{
     text-decoration: none;
     color: rgb(43, 43, 43);
     padding: 0 30px;
     font-weight: 400;
+}
+
+.menu-mobile {
+   display: none;
 }
 
 
@@ -232,8 +237,41 @@ ul{
     }
 }
 
-@media (max-width:475px){
+@media (max-width:640px){
+    .menu-mobile{
+        display: flex;
+        justify-content: flex-end;
+        line-height: 1.2rem;
+        color: #fbfbfb;
+        margin-right: 20px;
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+    .menu{
+        width: 240px;
+        height: 100%;
+        position: fixed;
+        background-image: url("../img/textura.png");
+        top: 0;
+        right: 0;
+    }
+    .menu nav ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
     .menu nav ul li a{
-        padding: 0 25px;
+        color: rgb(43, 43, 43);
+        font-weight: bold;
+    }
+    .menu nav ul li{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(43, 43, 43);
+    }
+    .menu nav ul li:last-child{
+        padding-bottom: 0;
+        border-bottom: 0;
     }
 }
