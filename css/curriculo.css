@@ -35,15 +35,15 @@ ul{
     width: 60%;
     float: right;
 }
-.navigation ul {
+.menu ul {
     list-style: none;
 }
-.navigation ul{
+.menu ul{
     display: flex;
     justify-content: flex-end;
     align-items:center;
 }
-.navigation ul li a{
+.menu ul li a{
     text-decoration: none;
     color: rgb(43, 43, 43);
     padding: 0 30px;
@@ -51,8 +51,12 @@ ul{
 }
 
 .menu-mobile {
-   display: none;
+    display: none;
 }
+.nav-mobile {
+    display: none;
+}
+
 
 
 
@@ -238,39 +242,45 @@ ul{
 }
 
 @media (max-width:640px){
+    .nav{
+        display: none;
+    }
     .menu-mobile{
-        display: flex;
-        justify-content: flex-end;
-        line-height: 1.2rem;
+        display: block;
         color: #fbfbfb;
+        text-align: right;
         margin-right: 20px;
-        font-size: 1.2em;
+        font-size: 3em;
         margin-top: 20px;
     }
-    .menu{
-        width: 240px;
-        height: 100%;
-        position: fixed;
+    .nav-mobile{
+        display: block;
         background-image: url("../img/textura.png");
-        top: 0;
+        background-size: cover;
+        position: fixed;
+        width: 250px;
+        height: 100%;
         right: 0;
+        top: 0;
+        z-index: 10;
     }
-    .menu nav ul {
+    .nav-mobile ul {
         display: flex;
         flex-direction: column;
+        padding-top: 20px;
         row-gap: 20px;
     }
-    .menu nav ul li a{
-        color: rgb(43, 43, 43);
+    .nav-mobile ul li a{
+        color: rgb(43, 43, 43) !important;
         font-weight: bold;
     }
-    .menu nav ul li{
-        width: 100%;
+    .nav-mobile ul li{
+        width: 80%;
         text-align: center;
         padding-bottom: 20px;
         border-bottom: 1px solid rgb(43, 43, 43);
     }
-    .menu nav ul li:last-child{
+    .nav-mobile ul li:last-child{
         padding-bottom: 0;
         border-bottom: 0;
     }

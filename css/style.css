@@ -50,6 +50,9 @@ body{
 .menu-mobile {
    display: none;
 }
+.nav-mobile{
+    display: none;
+}
 
 
 
@@ -91,7 +94,7 @@ body{
     width: 35%;
     margin-left: 4%;
     animation-name: imagem-movi;
-    animation-duration: 700ms;
+    animation-duration: 2s;
     transition: ease-out;
 }
 .titulo{
@@ -100,30 +103,21 @@ body{
 
 @keyframes imagem-movi{
     0%{
-        margin-top: -20%;
-        opacity: 0;
-    }
-    25%{
-        margin-top: -15%;
+        transform: translateY(-40px);
         opacity: 0;
     }
     50%{
-        margin-top: -10%;
         opacity: .5;
     }
-    75%{
-        margin-top: -5%;
-        opacity: .7;
-    }
     100%{
-        margin-top: 0%;
+        transform: translateY(0px);
         opacity: 1;
     }
 }
 
 @keyframes text-movi{
     0%{
-        font-size: 0;
+        opacity: 0;
     }
     100%{
     }
@@ -185,6 +179,9 @@ body{
     grid-template-rows: auto;
     row-gap: 50px;
     padding-bottom: 50px;
+
+    animation-name: portfolio-animacao;
+    animation-duration: 2s;
 }
 .card-trabalho{
     width: 350px;
@@ -192,21 +189,26 @@ body{
     object-fit: cover;
     background-size: cover;
 }
-
 .blackbox{
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color:black;
     opacity: 0;
+    transition: all 1s ease-in-out;
 }
 .blackbox:hover{
     opacity: .8;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1s ease-in-out;
 }
-.blackbox-text h1{
+.blackbox-text  h1{
     color: #f27609;
+    text-align: center;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -216,12 +218,29 @@ body{
     text-align: center;
 }
 
+@keyframes portfolio-animacao{
+    0%{
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
 
 
 
 
 
 
+
+
+
+
+
+
+/* Media querys */
 @media (min-width: 1000px) and (max-width:1250px){
     .image-profile{
         max-width: 320px;
@@ -314,7 +333,31 @@ body{
     .main h2{
         font-size: 1rem;
     }
-    .navigation .nav{
+
+    .portfolio{
+        display: grid;
+        grid-template-columns: 89%;
+        grid-template-rows: auto;
+    }
+    .card-trabalho{
+        margin: 0 auto;
+    }
+
+
+    .nav{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: block;
+        color: var(--cor-fonte);
+        text-align: right;
+        margin-right: 20px;
+        font-size: 3em;
+        margin-top: 20px;
+    }
+    .nav-mobile{
+        display: block;
         background-image: url("../img/textura.png");
         background-size: cover;
         position: fixed;
@@ -324,32 +367,50 @@ body{
         top: 0;
         z-index: 10;
     }
-    .menu-mobile{
-        display: flex;
-        color: var(--cor-fonte);;
-        justify-content: flex-end;
-        margin-right: 20px;
-        font-size: 1.2em;
-    }
-    .navigation ul{
+    .nav-mobile ul{
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 20px 0;
         row-gap: 20px;
     }
-    .navigation ul li a{
+    .nav-mobile ul li a{
         color: var(--cor-fundo);
         font-weight: bold;
     }
-    .navigation ul li{
+    .nav-mobile ul li{
         text-align: center;
-        width: 100%;
+        width: 80%;
         padding-bottom: 20px;
         border-bottom: 1px solid var(--cor-fundo);
     }
-    .navigation ul li:last-child{
+    .nav-mobile ul li:last-child{
         padding-bottom: 0;
         border-bottom: 0;
+    }
+}
+
+
+@media (max-width: 430px){
+    .portfolio{
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: auto;
+        margin-left: 13px;
+    }
+    .card-trabalho{
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    .blackbox-text{
+        text-align: center;
+    }
+    .main h1{
+        font-size: 1.8rem;
+        margin: 0;
+    }
+    .main h2{
+        font-size: .8rem;
     }
 }
