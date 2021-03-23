@@ -204,6 +204,9 @@ body{
     animation-name: portfolio-animacao;
     animation-duration: 2s;
 }
+.portfolio a{
+    text-decoration: none;
+}
 .card-trabalho{
     width: 350px;
     height: 350px;
