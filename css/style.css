@@ -9,16 +9,6 @@
     box-sizing: border-box;
     font-size: 100%;
 }
-/* 
-    para fazer uma barra de navegação
-    usa um tamanho para height
-    e vai usar o mesmo tamanho para line-height
-
-    nav{
-        height: 50px;
-        line-height: 50px;
-    }
-*/
 
 
 /* Estilo index.html */
@@ -26,7 +16,7 @@ body{
     background-color: var(--cor-fundo);
     color: var(--cor-fonte);
     font-family: 'Montserrat', sans-serif;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .navigation{
@@ -125,17 +115,15 @@ body{
 
 
 
-
-
-
-
-
 /* Estilo contato.html */
+.main-contato{
+    display: flex;
+    margin-top: 10vh;
+}
 .contato{
     display: flex;
     flex-direction: column;
-    margin-left: 10vw;
-    margin-top: 10vh;
+    margin: 0 10vw;
     row-gap: 20px;
 }
 .contato h1{
@@ -152,8 +140,8 @@ body{
 .redes-sociais{
     width: 260px;
     display: flex;
-   justify-content: space-around;
-   font-size: 2.5rem;
+    justify-content: space-around;
+    font-size: 2.5rem;
 }
 .redes-sociais a{
     color: var(--cor-fonte);
@@ -162,9 +150,42 @@ body{
     color: lightskyblue;
 }
 
+.enviar-email form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #eee;
+    width: 400px;
+    padding: 15px 0;
+    box-shadow: 1px -1px 5px #000, -1px 1px 5px #000;
+}
+.enviar-email form h2{
+    font-size: 1.5rem;
+    color: #f27609;
+}
+.enviar-email form input, .enviar-email form textarea{
+    width: 300px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+}
+.enviar-email form textarea{
+    height: 105px;
+}
+.enviar-email form input[type="submit"]{
+    background-color: forestgreen;
+    border-color: forestgreen;
+    border-style: solid;
+    color: #fff;
+    box-shadow: 1px -1px 3px forestgreen, -1px 1px 3px forestgreen;
+}
 
-/* Estilo portfoli.html */
 
+/* Estilo portfolio.html */
 .port{
     font-size: 2rem;
     color: #fff;
@@ -295,9 +316,11 @@ body{
     .main h1{
         font-size: 2.7rem;
         margin: 0;
+        text-align: center;
     }
     .main h2{
         font-size: 1rem;
+        text-align: center;
     }
     .portfolio{
         display: grid;
@@ -306,6 +329,15 @@ body{
     }
     .card-trabalho{
         margin: 0 auto;
+    }
+    .main-contato{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .contato{
+        margin: 0;
+        margin-bottom: 40px;
     }
 }
 
@@ -328,10 +360,12 @@ body{
     }
     .main h1{
         font-size: 2.5rem;
+        text-align: center;
         margin: 0;
     }
     .main h2{
         font-size: 1rem;
+        text-align: center;
     }
 
     .portfolio{
@@ -388,6 +422,15 @@ body{
         padding-bottom: 0;
         border-bottom: 0;
     }
+    .main-contato{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .contato{
+        margin: 0;
+        margin-bottom: 40px;
+    }
 }
 
 
@@ -412,5 +455,22 @@ body{
     }
     .main h2{
         font-size: .8rem;
+    }
+    .main-contato{
+        width: 90%;
+        flex-direction: column;
+        margin-bottom: 40px;
+        margin-left: 5%;
+    }
+    .contato{
+        margin-bottom: 40px;
+    }
+    .enviar-email form{
+        width: 90%;
+        padding: 15px;
+        margin-left: 5%;
+    }
+    .enviar-email form input, .enviar-email form textarea{
+        width: 100%;
     }
 }

@@ -25,20 +25,50 @@
         </nav>
     </header>
 
-    <main class="contato">
-        <h1>Contato</h1>
-        <h2>E-MAIL:</h2>
-        <h3>leandronasx18@gmail.com</h3>
-        <h2>TELEFONE:</h2>
-        <h3>(75) 99291-9172</h3>
-        <h2>REDES SOCIAIS:</h2>
-        <div class="redes-sociais">
-            <a href="https://www.instagram.com/leandro.nasx/" target="_blank"><i class="fa fa-instagram"></i></a>
-            <a href=""><i class="fa fa-whatsapp" target="_blank"></i></a>
-            <a href="https://www.linkedin.com/in/leandronasx/" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/leandronasx" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="https://codepen.io/leandronasx" target="_blank"><i class="fa fa-codepen" target="_blank"></i></a>
-        </div>
+    <main class="main-contato">
+        <section class="contato">
+            <h1>Contato</h1>
+            <h2>E-MAIL:</h2>
+            <h3>leandronasx18@gmail.com</h3>
+            <h2>TELEFONE:</h2>
+            <h3>(75) 99291-9172</h3>
+            <h2>REDES SOCIAIS:</h2>
+            <div class="redes-sociais">
+                <a href="https://www.instagram.com/leandro.nasx/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-whatsapp" target="_blank"></i></a>
+                <a href="https://www.linkedin.com/in/leandronasx/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/leandronasx" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://codepen.io/leandronasx" target="_blank"><i class="fa fa-codepen" target="_blank"></i></a>
+            </div>
+        </section>
+
+
+        <section class="enviar-email">
+            <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+                <h2>ENTRE EM CONTATO</h2>
+                <input type="text" name="subject" placeholder="Assunto" />
+                <input type="email" name="extra_email" placeholder="Email">
+                <input type="text" name="extra_nome" placeholder="Nome">
+                <textarea name="text" placeholder="Mensagem"></textarea>
+                <input type="hidden" name="access_token" value="4agnmvyrrahvpow8tpnme21p" />
+                
+                <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+            
+            
+                <input id="submit_form" type="submit" value="ENVIAR" />
+            </form>
+            <script>
+                var submitButton = document.getElementById("submit_form");
+                var form = document.getElementById("email_form");
+                form.addEventListener("submit", function (e) {
+                    setTimeout(function() {
+                        submitButton.value = "Sending...";
+                        submitButton.disabled = true;
+                    }, 1);
+                });
+            </script> 
+        </section>
     </main>
 
     <script src="js/script.js"></script>
