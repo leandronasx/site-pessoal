@@ -4,37 +4,205 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leandro Nascimento - Site Profissional</title>
+    <title>Leandro Nascimento - Portfólio</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./img/icone.ico" type="image/x-icon">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Leandro Nascimento - Portfólio">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://leandronas.com.br/">
+    <meta property="og:image" content="https://leandronas.com.br/img/eu.png">
+    <meta property="og:description" content="Faça seu site, e tenha sua presença digital.">
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Leandro Nascimento - Portfólio">
+    <meta itemprop="description" content="Faça seu site, e tenha sua presença digital.">
+    <meta itemprop="image" content="https://leandronas.com.br/img/eu.png">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@leandronasx">
+    <meta name="twitter:title" content="Leandro Nascimento - Portfólio">
+    <meta name="twitter:description" content="Faça seu site, e tenha sua presença digital.">
+    <meta name="twitter:image" content="https://leandronas.com.br/img/eu.png">
+    <meta name="twitter:domain" content="https://leandronas.com.br/">
+
 </head>
 <body>
-    <header class="navigation">
-        <a href="#" class="menu-mobile" id="botao-menu">
-            <i class="fa fa-bars"></i>
-        </a>
-        <nav id="navegacao" class="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="curriculo.html">Currículo</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+    <header class="cabecalho">
+        <div class="container cabecalho-menu">
+            <div class="cabecalho-logo">
+               
+               
+            </div>
+    
+            <div class="cabecalho-navegacao">
+                <nav class="navegacao">
+                    <ul class="lista-menu">
+                        <li class="item-menu"><a href="#secao-sobre-mim">Sobre mim</a></li>
+                        <li class="item-menu"><a href="#secao-skills">Skills</a></li>
+                        <li class="item-menu"><a href="#secao-hobbies">Hobbies</a></li>
+                        <li class="item-menu"><a href="#secao-formacao">Formação</a></li>
+                        <li class="item-menu"><a href="./portfolio.html">Projetos</a></li>
+                        <li class="item-menu"><a href="./contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container cabecalho-sobre-mim">
+            
+           <div class="sobre-min-imagem">
+                <img class="foto-redonda" src="./img/eu.jpg" alt="Minha foto pessoal">
+           </div>
+           <div class="sobre-min-info">
+                <h2 class="titulo-apresentacao">Olá, meu nome é <span  class="text-padrao">Leandro Nascimento</span> e construo páginas web</h2>
+                <p class="paragrafo-apresentacao">Eu sou formada em técnico de informática, estou cursando engenharia de software e atualmente também estou participando no projeto Oracle ONE na Alura.</p>
+
+
+                <nav class="redes-sociais">
+                    <ul class="lista-redes">
+                        <li class="item-redes"><a href="https://github.com/leandronasx" target="_blank">Github</a><i class="fas fa-external-link-alt" style="color: #EAF2FD;font-size: 19px;font-weight: 400;padding-left: 5px;"></i></li>
+                        <li class="item-redes"><a href="https://www.linkedin.com/in/leandronasx/" target="_blank">Linkedin</a><i class="fas fa-external-link-alt" style="color: #EAF2FD;font-size: 19px;font-weight: 400;padding-left: 5px;"></i></li>
+                        <li class="item-redes"><a href="https://www.instagram.com/oleandronasx/" target="_blank">Instagram</a><i class="fas fa-external-link-alt" style="color: #EAF2FD;font-size: 19px;font-weight: 400;padding-left: 5px;"></i></li>
+                        <li class="item-redes"><a href="https://drive.google.com/file/d/1ri6SZBJ4sv7dkE_TZ9gp0oLo5-JmYExr/view?usp=sharing" target="_blank">Currículo</a><i class="fas fa-external-link-alt" style="color: #EAF2FD;font-size: 19px;font-weight: 400;padding-left: 5px;"></i></li>
+                    </ul>
+                </nav>
+           </div>
+        </div>
     </header>
-    <main class="main">
-        <section class="image">
-            <img class="image-profile" src="img/ivan-profile-4.jpg" alt="">
+
+    <main>
+        <section class="secao-sobre-mim" id="secao-sobre-mim">
+            <div class="container">
+                <h2 class="titulo-secao">Sobre mim</h2>
+
+                <p>
+                    Sou técnico de informática. Fascinado por tecnologia. Estou sempre em busca de conhecimentos que me possibilitem expandir minhas habilidades. Consigo obter soluções para problemas com facilidade. Atualmente estou cursando engenharia de software.
+                </p>
+
+                <p>
+                    Sou motivado, disciplinado, criativo, gosto de trabalhar em equipe, resolvedor de problema é minha virtude. Me pergunte sobre techs como; HTML, CSS, JavaScript, Node JS, PHP, Python.
+                </p>
+                <span class="assinatura">Leandro Nascimento</span>
+            </div>
         </section>
 
-        <section class="titulo">
-            <h1>Leandro <span class="text-orange">Jesus do Nascimento</span></h1>
-            <h2>Técnico em Informática - Desenvolvedor Web</h2>
+        <section class="secao-skills" id="secao-skills">
+            <div class="container">
+                <h2 class="titulo-secao">Skills</h2>
+                <div class="skills">
+                    <div class="skill">
+                        <i class="fab fa-html5" style="color: #2A7AE4;font-size: 32px;font-weight: 400;"></i>
+                        <h4>HTML 5</h4>
+                    </div>
+    
+                    <div class="skill">
+                        <i class="fab fa-css3-alt" style="color: #2A7AE4;font-size: 32px;font-weight: 400;"></i>
+                        <h4>CSS 3</h4>
+                    </div>
+    
+                    <div class="skill">
+                        <i class="fab fa-js-square" style="color: #2A7AE4;font-size: 32px;font-weight: 400;"></i>
+                        <h4>Javascript</h4>
+                    </div>
+                    
+                    <div class="skill">
+                        <i class="fab fa-git-square" style="color: #2A7AE4;font-size: 32px;font-weight: 400;"></i>
+                        <h4>Git</h4>
+                    </div>
+
+                    <div class="skill">
+                        <i class="fab fa-node" style="color: #2A7AE4;font-size: 32px;font-weight: 400;"></i>
+                        <h4>Node JS</h4>
+                    </div>
+    
+                    <div class="skill">
+                        <i class="fab fa-php" style="color: #2A7AE4;font-size: 32px;font-weight: 400;"></i>
+                        <h4>PHP</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-hobbies" id="secao-hobbies">
+            <div class="container">
+                <h2 class="titulo-secao">Hobbies</h2>
+                <div class="skills">
+                    <div class="skill">
+                        <i class="fas fa-book" style="color: #2A7AE4;font-size: 32px;font-weight: 400;"></i>
+                        <h4>Ler</h4>
+                    </div>
+    
+                    <div class="skill">
+                        <i class="fas fa-headphones" style="color: #2A7AE4;font-size: 32px;font-weight: 400;"></i>
+                        <h4>Ouvir</h4>
+                    </div>
+    
+                    <div class="skill">
+                        <i class="fas fa-tv" style="color: #2A7AE4;font-size: 32px;font-weight: 400;"></i>
+                        <h4>Assistir</h4>
+                    </div>
+                    
+                    <div class="skill">
+                        <i class="fas fa-running" style="color: #2A7AE4;font-size: 32px;font-weight: 400;"></i>
+                        <h4>Correr</h4>
+                    </div>
+                    
+                    <div class="skill">
+                        <i class="fas fa-plane-departure" style="color: #2A7AE4;font-size: 32px;font-weight: 400;"></i>
+                        <h4>Viajar</h4>
+                    </div>
+    
+                    <div class="skill">
+                        <i class="fas fa-laptop-code" style="color: #2A7AE4;font-size: 32px;font-weight: 400;"></i>
+                        <h4>Programar</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-formacao" id="secao-formacao">
+            <div class="container">
+                <h2 class="titulo-secao">Formação acadêmica</h2>
+                <div class="formacoes">
+                    <div class="item-formacao">
+                        <div class="formacao">
+                            <img src="./img/ifba.jpeg" alt="">
+                        </div>
+                        <h4>Técnico de informática</h4>
+                        <span>2019 - IFBA</span>
+                    </div>
+                    <div class="item-formacao">
+                        <div class="formacao">
+                            <img src="./img/ampli.png" alt="">
+                        </div>
+                        <h4>Engenharia de software</h4>
+                        <span>Cursando - AMPLI</span>
+                    </div>
+                     <div class="item-formacao">
+                        <div class="formacao">
+                            <img src="./img/one.png" alt="">
+                        </div>
+                        <h4>Oracle Next Education</h4>
+                        <span>Cursando - ONE</span>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <script src="js/script.js"></script>
+    <footer class="footer">
+        <p>Desenvolvido por Leandro Nascimento</p>
+        <p>2021-2022</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

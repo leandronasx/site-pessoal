@@ -1,0 +1,280 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* CLASSES GERAIS */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.assinatura{
+    font-family: 'Sacramento', cursive;
+    display: inline-block;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.titulo-secao{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    color: #F8F8F8;
+    text-align: center;
+}
+
+.text-padrao{
+    color: #f27609;
+    font-weight: bold;
+
+    animation-name: text-movimento;
+    animation-duration: 2s;
+    transition: ease-out;
+}
+
+
+/* HEADER */
+.cabecalho{
+    padding-top: 34px;
+    width: 100%;
+    min-height: 520px;
+    background-color: #464646;
+    color: #F8F8F8;
+}
+
+.cabecalho-menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.lista-menu{
+    line-height: 30px;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.item-menu{
+    display: inline;
+    margin-right: 30px;
+}
+.item-menu:last-child{
+    margin-right: 0px;
+}
+.item-menu a{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #F8F8F8;
+}
+.item-menu a:hover{
+    color: #f27609;
+}
+
+/* CABEÇALHO SOBRE MIM */
+.cabecalho-sobre-mim{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo-apresentacao{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 61px;
+    margin-bottom: 24px;
+}
+
+.paragrafo-apresentacao{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+
+.lista-redes{
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.item-redes{
+    display: inline;
+    margin-right: 40px;
+}
+.item-redes:last-child{
+    margin-right: 0px;
+}
+.item-redes a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #F8F8F8;
+}
+.item-redes a:hover{
+    color: #f27609;
+}
+
+.foto-redonda{
+    width: 368px;
+    height: 368px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 40px;
+
+    animation-name: imagem-movimento;
+    animation-duration: 2s;
+    transition: ease-out;
+}
+
+
+/* SEÇÃO SOBRE MIM */
+.secao-sobre-mim{
+    display: flex;
+    align-items: center;
+    min-height: 382px;
+    background-color: #F5F5F5;
+}
+.secao-sobre-mim p{
+    width: 800px;
+    margin-top: 25px;
+}
+.secao-sobre-mim .titulo-secao{
+    text-align: left;
+    color: #464646;
+}
+
+
+/* SEÇÃO SKILLS */
+.secao-skills{
+    background-color: #464646;
+    min-height: 382px;
+}
+.secao-skills h2{
+    padding: 32px 0;
+}
+
+
+
+/* SEÇÃO HOBBIES */
+.secao-hobbies{
+    background-color: #464646;
+    min-height: 382px;
+}
+.secao-hobbies h2{
+    padding: 32px 0;
+}
+
+
+
+/* SEÇÃO FORMAÇÃO */
+.secao-formacao{
+    min-height: 482px;
+    background-color: #F5F5F5;
+}
+.secao-formacao h2{
+    padding: 32px 0;
+}
+.item-formacao h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #464646;
+    margin: 8px 0;
+}
+.item-formacao span{
+    font-weight: 500;
+    font-size: 16px;
+    color: #464646;
+}
+
+
+/* FOOTER */
+.footer{
+    min-height: 80px;
+    background-color: #464646;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer p{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+    color: #F8F8F8;
+}
+
+
+/* MODELO DE SKILLS E HOBBIES */
+.skills{
+    display: flex;
+    flex-wrap: row nowrap;
+    justify-content: space-around;
+}
+.skill{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    padding: 0 0 20px 20px;
+    width: 176px;
+    height: 174px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 1px #000;
+    margin-left: 16px;
+}
+.skill > h4{
+    margin-top: 10px;
+    color: #464646;
+    font-weight: bold;
+} 
+/* MODELO DE FORMAÇÃO */
+.formacoes{
+    display: flex;
+    flex-wrap: row nowrap;
+    justify-content: space-around;
+}
+.formacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 368px;
+    height: 286px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 1px #000;
+}
+.formacao img{
+    width: 192px;
+    height: 130px;
+}
+
+
+/* FRAMES KEY*/
+
+@keyframes imagem-movimento{
+    0%{
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-movimento{
+    0%{
+        opacity: 0;
+    }
+    100%{
+    }
+}
