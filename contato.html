@@ -7,15 +7,18 @@
     <title>Leandro Nascimento - Contato</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/contato.css">
+    
 
     <link rel="shortcut icon" href="./img/icone.ico" type="image/x-icon">
 
     <!-- Open Graph data -->
     <meta property="og:title" content="Leandro Nascimento - Portfólio">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://leandronas.com.br/">
+    <meta property="og:url" content="https://leandronas.com.br//">
     <meta property="og:image" content="https://leandronas.com.br//img/eu.jpg">
     <meta property="og:description" content="Faça seu site, e tenha sua presença digital.">
 
@@ -30,10 +33,10 @@
     <meta name="twitter:title" content="Leandro Nascimento - Portfólio">
     <meta name="twitter:description" content="Faça seu site, e tenha sua presença digital.">
     <meta name="twitter:image" content="https://leandronas.com.br//img/eu.jpg">
-    <meta name="twitter:domain" content="https://leandronas.com.br/">
+    <meta name="twitter:domain" content="https://leandronas.com.br//">
 </head>
 <body>
-    <header class="navigation">
+    <!-- <header class="navigation">
         <a href="#" class="menu-mobile" id="botao-menu">
             <i class="fa fa-bars"></i>
         </a>
@@ -45,6 +48,27 @@
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
+    </header> -->
+
+    <header class="cabecalho">
+        <div class="container cabecalho-menu">
+            <div class="cabecalho-logo">
+               <h1 style="font-size: 0px;">Leandro Nascimento</h1>
+            </div>
+    
+            <div class="cabecalho-navegacao">
+                <nav class="navegacao">
+                    <ul class="lista-menu">
+                        <li class="item-menu"><a href="./index.html#secao-sobre-mim">Sobre mim</a></li>
+                        <li class="item-menu"><a href="./index.html#secao-skills">Skills</a></li>
+                        <li class="item-menu"><a href="./index.html#secao-hobbies">Hobbies</a></li>
+                        <li class="item-menu"><a href="./index.html#secao-formacao">Formação</a></li>
+                        <li class="item-menu"><a href="./projetos.html">Projetos</a></li>
+                        <li class="item-menu"><a href="./contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main class="main-contato">
@@ -68,6 +92,8 @@
         <section class="enviar-email">
             <form action="https://postmail.invotes.com/send" method="post" id="email_form">
                 <h2>ENTRE EM CONTATO</h2>
+                <p>Quer entrar em contato comigo?
+                    Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
                 <input type="text" name="subject" placeholder="Assunto" />
                 <input type="email" name="extra_email" placeholder="Email">
                 <input type="text" name="extra_nome" placeholder="Nome">

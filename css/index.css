@@ -28,12 +28,12 @@
     font-style: normal;
     font-weight: 700;
     line-height: 38px;
-    color: #F8F8F8;
+    color: #464646;
     text-align: center;
 }
 
 .text-padrao{
-    color: #f27609;
+    color: #2A7AE4;
     font-weight: bold;
 
     animation-name: text-movimento;
@@ -47,8 +47,8 @@
     padding-top: 34px;
     width: 100%;
     min-height: 520px;
-    background-color: #464646;
-    color: #F8F8F8;
+    background-color: #F5F5F5;
+    color: #464646;
 }
 
 .cabecalho-menu{
@@ -74,10 +74,10 @@
     font-size: 18px;
     font-weight: 500;
     text-decoration: none;
-    color: #F8F8F8;
+    color: #464646;
 }
 .item-menu a:hover{
-    color: #f27609;
+    color: #2A7AE4;
 }
 
 /* CABEÇALHO SOBRE MIM */
@@ -116,10 +116,10 @@
 .item-redes a{
     text-decoration: none;
     font-weight: 500;
-    color: #F8F8F8;
+    color: #464646;
 }
 .item-redes a:hover{
-    color: #f27609;
+    color: #2A7AE4;
 }
 
 .foto-redonda{
@@ -140,7 +140,7 @@
     display: flex;
     align-items: center;
     min-height: 382px;
-    background-color: #F5F5F5;
+    background-color: #EAF2FD;
 }
 .secao-sobre-mim p{
     width: 800px;
@@ -154,7 +154,7 @@
 
 /* SEÇÃO SKILLS */
 .secao-skills{
-    background-color: #464646;
+    background-color: #F5F5F5;
     min-height: 382px;
 }
 .secao-skills h2{
@@ -165,7 +165,7 @@
 
 /* SEÇÃO HOBBIES */
 .secao-hobbies{
-    background-color: #464646;
+    background-color: #F5F5F5;
     min-height: 382px;
 }
 .secao-hobbies h2{
@@ -176,8 +176,8 @@
 
 /* SEÇÃO FORMAÇÃO */
 .secao-formacao{
-    min-height: 482px;
-    background-color: #F5F5F5;
+    min-height: 502px;
+    background-color: #EAF2FD;
 }
 .secao-formacao h2{
     padding: 32px 0;
@@ -198,7 +198,7 @@
 /* FOOTER */
 .footer{
     min-height: 80px;
-    background-color: #464646;
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,9 +206,8 @@
 }
 .footer p{
     font-size: 16px;
-    font-weight: bold;
     line-height: 19px;
-    color: #F8F8F8;
+    color: #464646;
 }
 
 
@@ -225,7 +224,7 @@
     padding: 0 0 20px 20px;
     width: 176px;
     height: 174px;
-    background-color: #f5f5f5;
+    background-color: #FFFFFF;
     box-shadow: 0px 0px 1px #000;
     margin-left: 16px;
 }

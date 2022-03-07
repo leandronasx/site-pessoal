@@ -1,0 +1,133 @@
+/* GERAL */
+*{
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.cabecalho{
+    padding: 34px 0;
+    width: 100%;
+    background-color: #EAF2FD;
+    color: #464646;
+}
+
+.cabecalho-menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.lista-menu{
+    line-height: 30px;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.item-menu{
+    display: inline;
+    margin-right: 30px;
+}
+.item-menu:last-child{
+    margin-right: 0px;
+}
+.item-menu a{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #464646;
+}
+.item-menu a:hover{
+    color: #2A7AE4;
+}
+
+.main-contato{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 0;
+    background-color: #EAF2FD;
+}
+.contato{
+    width: 400px;
+    min-height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contato h1{
+    font-size: 2.5rem;
+    color: #2A7AE4;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.contato h2{
+    height: 50px;
+    color: #464646;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.contato h3{
+    height: 50px;
+    color: #464646; 
+    font-size: 1rem;
+    margin: 10px 0;
+    font-weight: 500;
+}
+.redes-sociais{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5rem;
+}
+.redes-sociais a{
+    color: #464646;
+}
+.redes-sociais a:hover{
+    color: #353535;
+}
+
+.enviar-email form{  
+    width: 400px;
+    min-height: 410px;
+}
+.enviar-email form h2{
+    font-size: 1.5rem;
+    color: #2A7AE4;
+}
+.enviar-email form p{
+    font-weight: 500;
+    font-size: 16px;
+    color: #464646;
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+.enviar-email form input, .enviar-email form textarea{
+    width: 100%;
+    height: 26px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 0px;
+    outline: 0px;
+    border-radius: 4px;
+    border-bottom: solid 4px #FFFFFF;
+    background-color: #FFFFFF;
+}
+.enviar-email form input:focus, .enviar-email form textarea:focus{
+    border-bottom-color:#2A7AE4;
+}
+.enviar-email form textarea{
+    height: 105px;
+    margin-bottom: 20px;
+    resize: none;
+}
+.enviar-email form input[type="submit"]{
+    width: 105%;
+    height: 46px;
+    border-radius: 0px;
+    background-color: #2A7AE4;
+    color: #fff;
+}
