@@ -1,7 +1,9 @@
-/* GERAL */
 *{
+    box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
+
+/* GERAL */
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -20,7 +22,6 @@
     flex-flow: row wrap;
     justify-content: space-between;
 }
-
 .lista-menu{
     line-height: 30px;
     list-style: none;
@@ -43,6 +44,8 @@
     color: #2A7AE4;
 }
 
+/* MAIN */
+
 .main-contato{
     display: flex;
     justify-content: center;
@@ -53,29 +56,27 @@
 .contato{
     width: 400px;
     min-height: 410px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 .contato h1{
     font-size: 2.5rem;
-    color: #2A7AE4;
-    margin-top: -10px;
+    font-weight: 500;
+    margin-top: 0px;
     margin-bottom: 20px;
+    color: #2A7AE4;
 }
 .contato h2{
-    height: 50px;
-    color: #464646;
+    height: 45px;
     font-size: 1.4rem;
     font-weight: bold;
-    margin: 10px 0;
+    margin: 12px 0;
+    color: #464646;
 }
 .contato h3{
-    height: 50px;
-    color: #464646; 
+    height: 45px;
     font-size: 1rem;
-    margin: 10px 0;
     font-weight: 500;
+    margin: 12px 0;
+    color: #464646; 
 }
 .redes-sociais{
     width: 80%;
@@ -83,19 +84,39 @@
     justify-content: space-between;
     font-size: 2.5rem;
 }
-.redes-sociais a{
-    color: #464646;
+.redes-sociais a i{
+    font-size: 1.5rem;
+    height: 35px;
+    line-height: 35px;
+    width: 35px;
+    text-align: center;
+    border-radius: 5px;
+    color: #F8F8F8;
 }
-.redes-sociais a:hover{
-    color: #353535;
+.redes-sociais a i.fa-whatsapp{
+    background-color: #34af23;
+}
+.redes-sociais a i.fa-instagram{
+    background: linear-gradient(to bottom, #515bd4, #8134af, #dd2a7ba9);
+}
+.redes-sociais a i.fa-linkedin{
+    background-color:  #0e76a8;
+}
+.redes-sociais a i.fa-github{
+    background-color: #171515;
+}
+.redes-sociais a i.fa-codepen{
+    background-color: #060606;
 }
 
-.enviar-email form{  
+
+.enviar-email{  
     width: 400px;
     min-height: 410px;
 }
 .enviar-email form h2{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 500;
     color: #2A7AE4;
 }
 .enviar-email form p{
@@ -105,9 +126,9 @@
     margin-bottom: 10px;
     margin-top: 8px;
 }
-.enviar-email form input, .enviar-email form textarea{
+.enviar-email  input:not([type="submit"]), .enviar-email  textarea{
     width: 100%;
-    height: 26px;
+    height: 46px;
     padding: 10px;
     margin-top: 10px;
     border: 0px;
@@ -115,6 +136,7 @@
     border-radius: 4px;
     border-bottom: solid 4px #FFFFFF;
     background-color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
 }
 .enviar-email form input:focus, .enviar-email form textarea:focus{
     border-bottom-color:#2A7AE4;
@@ -124,10 +146,116 @@
     margin-bottom: 20px;
     resize: none;
 }
-.enviar-email form input[type="submit"]{
-    width: 105%;
+.enviar-email  input[type="submit"]{
+    width: 100%;
     height: 46px;
-    border-radius: 0px;
     background-color: #2A7AE4;
     color: #fff;
+    border-radius: 0px;
+    outline: 0px;
+    border: 0px;
+}
+
+/* MENU MOBILE */
+.menu-mobile i{
+    width: 90%;
+    font-size: 2.5rem;
+    text-align: right;
+    color: #2A7AE4;
+    display: none;
+}
+
+.oculto{
+    display: none;
+}
+#close-menu{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#close-menu i{
+    color: #2A7AE4;
+    font-size: 2rem;
+}
+#close-menu i:active{
+    color: #eb0f0f;
+}
+
+/* BREAK POINTS */
+@media (min-width: 601px) and (max-width:1199px){
+    .container{
+        width: 95%;
+    }
+    .main-contato{
+        width: 100%;
+    }
+    .contato{
+        width: 48%;
+    }
+    .enviar-email{
+        width: 48%;
+    }
+}
+@media (max-width:600px){
+    .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .main-contato{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 0px;
+    }
+    .contato{
+        width: 90%;
+        margin-bottom: 50px;
+    }
+    .enviar-email{
+        width: 90%;
+    }
+
+    .menu-mobile i{
+        display: inline-block;
+    }
+
+    .cabecalho-menu{
+        display: none;
+    }
+
+    .cabecalho-mobile{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        margin: 0px;
+        padding: 0px;
+        background-color: rgba(44, 44, 44, .15);
+    }
+    .nav-mobile{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: 250px;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        margin: 0px;
+        padding: 0px;
+        background: url("../img/textura.png");
+        padding-top: 70px;
+        z-index: 99;
+    }
+    .item-menu{
+        display: block;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    .item-menu a{
+        font-size: 20px;
+    }
 }

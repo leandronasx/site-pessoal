@@ -7,7 +7,9 @@
     <title>Leandro Nascimento - Portfólio</title>
 
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
@@ -18,45 +20,39 @@
     <!-- Open Graph data -->
     <meta property="og:title" content="Leandro Nascimento - Portfólio">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://leandronas.com.br//">
-    <meta property="og:image" content="https://leandronas.com.br//img/eu.jpg">
+    <meta property="og:url" content="https://leandronas.com.br/">
+    <meta property="og:image" content="https://leandronas.com.br/img/eu.png">
     <meta property="og:description" content="Faça seu site, e tenha sua presença digital.">
 
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="Leandro Nascimento - Portfólio">
     <meta itemprop="description" content="Faça seu site, e tenha sua presença digital.">
-    <meta itemprop="image" content="https://leandronas.com.br//img/eu.jpg">
+    <meta itemprop="image" content="https://leandronas.com.br/img/eu.png">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@leandronasx">
     <meta name="twitter:title" content="Leandro Nascimento - Portfólio">
     <meta name="twitter:description" content="Faça seu site, e tenha sua presença digital.">
-    <meta name="twitter:image" content="https://leandronas.com.br//img/eu.jpg">
-    <meta name="twitter:domain" content="https://leandronas.com.br//">
+    <meta name="twitter:image" content="https://leandronas.com.br/img/eu.png">
+    <meta name="twitter:domain" content="https://leandronas.com.br/">
 </head>
 <body>
-    <!-- <header class="navigation">
-        <a href="#" class="menu-mobile" id="botao-menu">
+    <header class="cabecalho">
+        <a href="#" class="container menu-mobile" id="botao-menu">
             <i class="fa fa-bars"></i>
         </a>
-        <nav id="navegacao" class="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="curriculo.html">Currículo</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header> -->
 
-    <header class="cabecalho">
-        <div class="container cabecalho-menu">
+        <div class="container cabecalho-menu" id="cabecalho-menu">
             <div class="cabecalho-logo">
                <h1 style="font-size: 0px;">Leandro Nascimento</h1>
             </div>
     
-            <div class="cabecalho-navegacao">
+            <div class="cabecalho-navegacao" id="cabecalho-navegacao">
+                <div id="close-menu" class="oculto">
+                    <i onclick="fecharMenu()" class="far fa-window-close"></i>
+                </div>
+
                 <nav class="navegacao">
                     <ul class="lista-menu">
                         <li class="item-menu"><a href="./index.html#secao-sobre-mim">Sobre mim</a></li>
